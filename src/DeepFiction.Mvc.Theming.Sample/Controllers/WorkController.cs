@@ -8,7 +8,7 @@ namespace DeepFiction.Mvc.Theming.Sample.Controllers {
 
         [HttpGet]
         public ActionResult Index() {
-            return View(new HomeModel {
+            return View(new WorkModel {
                 Content = "Hello View Model Factory!"
             });
         }
