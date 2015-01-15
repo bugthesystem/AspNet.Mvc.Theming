@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNet.Mvc.Theming", "AspNet.Mvc.Theming\AspNet.Mvc.Theming.csproj", "{909F78F7-8ECD-48DF-AA40-97736E9F81C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNet.Mvc.Theming.Sample", "AspNet.Mvc.Theming.Sample\AspNet.Mvc.Theming.Sample.csproj", "{4477784C-C6EE-4034-A7BD-13E980130CDE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{36066794-8251-4931-AFB2-E4BBEEB15C77}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuspec", "nuspec", "{6F453056-A783-48EF-B214-92041F714F93}"
+	ProjectSection(SolutionItems) = preProject
+		AspNet.Mvc.Theming.nuspec = AspNet.Mvc.Theming.nuspec
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{909F78F7-8ECD-48DF-AA40-97736E9F81C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{909F78F7-8ECD-48DF-AA40-97736E9F81C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{909F78F7-8ECD-48DF-AA40-97736E9F81C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{909F78F7-8ECD-48DF-AA40-97736E9F81C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4477784C-C6EE-4034-A7BD-13E980130CDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4477784C-C6EE-4034-A7BD-13E980130CDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4477784C-C6EE-4034-A7BD-13E980130CDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4477784C-C6EE-4034-A7BD-13E980130CDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

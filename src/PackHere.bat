@@ -1,1 +1,1 @@
-.nuget\NuGet.exe pack DeepFiction.Mvc.Theming.nuspec
+.nuget\NuGet.exe pack AspNet.Mvc.Theming.nuspec

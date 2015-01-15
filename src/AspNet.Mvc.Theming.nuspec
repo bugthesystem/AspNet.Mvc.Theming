@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>AspNet.Mvc.Theming</id>
+    <version>0.1.1</version>
+    <authors>ziyasal</authors>
+    <owners>ziyasal</owners>
+    <projectUrl>https://github.com/ziyasal/AspNet.Mvc.Theming</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Enables implementing themes for ASP.NET MVC</description>
+    <summary>Enables implementing themes for ASP.NET MVC</summary>
+    <tags>asp.net mvc theming multi theme</tags>
+  </metadata>
+  <files>
+    <file src="BuildArtifacts\AspNet.Mvc.Theming\bin\net45\AspNet.Mvc.Theming.dll" target="lib\net45\AspNet.Mvc.Theming.dll" />
+    <file src="BuildArtifacts\AspNet.Mvc.Theming\bin\net40\AspNet.Mvc.Theming.dll" target="lib\net40\AspNet.Mvc.Theming.dll" />
+  </files>
+</package>
