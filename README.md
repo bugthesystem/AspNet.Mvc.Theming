@@ -39,7 +39,7 @@ Put [**Theme**](https://github.com/ziyasal/AspNet.Mvc.Theming/blob/master/src/As
         {
             return View(new WorkModel
             {
-                Content = "Hello View Model Factory!"
+                Content = "Hello World!"
             });
         }
 
