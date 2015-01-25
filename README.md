@@ -1,4 +1,4 @@
-DeepFiction.Mvc.Theming
+AspNet.Mvc.Theming
 ======================
 
 Enables implementing themes for ASP.NET MVC.
