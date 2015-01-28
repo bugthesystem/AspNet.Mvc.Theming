@@ -3,6 +3,8 @@ AspNet.Mvc.Theming
 
 Enables implementing themes for ASP.NET MVC.
 
+[![Build status](https://ci.appveyor.com/api/projects/status/phs4m7tiwyy48jd9?svg=true)](https://ci.appveyor.com/project/ziyasal/aspnet-mvc-theming)
+
 * [Nuget Package - AspNet.Mvc.Theming](https://www.nuget.org/packages/AspNet.Mvc.Theming/)
 
 To install AspNet.Mvc.Theming, 
