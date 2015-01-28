@@ -1,0 +1,11 @@
+configuration: Release
+branches:
+  only:
+    - master
+
+before_build:
+  - nuget restore src/AspNet.Mvc.Theming.sln
+
+build:
+  project: src/AspNet.Mvc.Theming.sln       
+  verbosity: minimal
