@@ -8,14 +8,18 @@ namespace AspNet.Mvc.Theming.ThemeSelectorSample
     {
         public string Resolve(ControllerContext controllerContext, string theme)
         {
-            string result = null;
+            string result;
 
             if (controllerContext.HttpContext.Session != null && controllerContext.HttpContext.Session["Theme"] != null)
             {
                 result = controllerContext.HttpContext.Session["Theme"].ToString();
             }
+            else
+            {
+                result = (!string.IsNullOrEmpty(theme) ? theme : "Default");
+            }
 
-            return result ?? (!string.IsNullOrEmpty(theme) ? theme : "Default"); ;
+            return result;
         }
     }
 
