@@ -52,7 +52,7 @@ Put [**Theme**](https://github.com/ziyasal/AspNet.Mvc.Theming/blob/master/src/As
 
 **Custom theme resolver**
 
-Implement your custom theme resolver [see]()
+Implement your custom theme resolver [see](https://github.com/ziyasal/AspNet.Mvc.Theming/blob/master/src/AspNet.Mvc.Theming.ThemeSelectorSample/Global.asax.cs#L7)
 
 Sample: SessionThemeResolver
 ```csharp
