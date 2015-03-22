@@ -11,6 +11,8 @@ To install AspNet.Mvc.Theming,
 ```bash
 Install-Package AspNet.Mvc.Theming
 ```
+>_**Area theme customization not implemented yet!**_
+
 How to use;
 -----------------------------
 
@@ -47,3 +49,30 @@ Put [**Theme**](https://github.com/ziyasal/AspNet.Mvc.Theming/blob/master/src/As
 
     }
 ```
+
+**Custom theme resolver**
+
+Implement your custom theme resolver [see]()
+
+Sample: SessionThemeResolver
+```csharp
+   public class SessionThemeResover : IThemeResolver
+    {
+        public string Resolve(ControllerContext controllerContext, string theme)
+        {
+            string result;
+
+            if (controllerContext.HttpContext.Session != null && controllerContext.HttpContext.Session["Theme"] != null)
+            {
+                result = controllerContext.HttpContext.Session["Theme"].ToString();
+            }
+            else
+            {
+                result = (!string.IsNullOrEmpty(theme) ? theme : "Default");
+            }
+
+            return result;
+        }
+    }
+```
+
