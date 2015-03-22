@@ -10,42 +10,41 @@
     <title>@ViewBag.Title</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
 
 </head>
 
 <body>
 
-<div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">I am a Default theme's Layout</a>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">I am a Default theme's Layout</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home with Other theme", "Index", "Home")</li>
+                    <li class="active">@Html.ActionLink("Work with Default theme", "Index", "Dummy")</li>
+                    <li>@Html.ActionLink("Products Area", "Index", "Admin", new { Area = "Admin" }, new { })</li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
         </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li>@Html.ActionLink("Home with Other theme", "Index", "Home")</li>
-                <li class="active">@Html.ActionLink("Work with Default theme", "Index", "Work")</li>
-            </ul>
-        </div>
-        <!--/.nav-collapse -->
     </div>
-</div>
 
-<div class="container">
-    @RenderBody()
-</div>
-<!-- /.container -->
-
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="~/Scripts/jquery-1.9.1.min.js"></script>
-<script src="~/Scripts/bootstrap.min.js"></script>
+    <div class="container">
+        @RenderBody()
+    </div>
+    <!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
 </body>
 </html>

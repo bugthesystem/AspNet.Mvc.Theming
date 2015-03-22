@@ -4,5 +4,6 @@
     {
         string ThemeDirectory { get; set; }
         string DefaultTheme { get; set; }
+        IThemeResolver ThemeResolver { get; set; }
     }
 }

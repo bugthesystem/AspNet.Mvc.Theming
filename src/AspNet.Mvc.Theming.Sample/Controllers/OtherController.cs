@@ -5,9 +5,8 @@ using AspNet.Mvc.Theming.Sample.Models;
 namespace AspNet.Mvc.Theming.Sample.Controllers
 {
     [Theme("Default")]
-    public class WorkController : Controller
+    public class DummyController : Controller
     {
-
         [HttpGet]
         public ActionResult Index()
         {
@@ -16,6 +15,5 @@ namespace AspNet.Mvc.Theming.Sample.Controllers
                 Content = "Hello View Model Factory!"
             });
         }
-
     }
 }

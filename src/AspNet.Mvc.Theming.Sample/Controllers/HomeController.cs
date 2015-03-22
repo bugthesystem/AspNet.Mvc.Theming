@@ -7,7 +7,6 @@ namespace AspNet.Mvc.Theming.Sample.Controllers
     [Theme("Other")]
     public class HomeController : Controller
     {
-
         [HttpGet]
         public ActionResult Index()
         {

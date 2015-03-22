@@ -10,7 +10,8 @@ namespace AspNet.Mvc.Theming
 {
     public class ThemeManager
     {
-        private static readonly Lazy<ThemeManager> Lazy =
+
+        private static readonly Lazy<ThemeManager> ThemeManagerInstance =
             new Lazy<ThemeManager>(() => new ThemeManager(new ThemingConfiguration()));
 
         private readonly IThemingConfiguration _configuration;
@@ -20,21 +21,10 @@ namespace AspNet.Mvc.Theming
             _configuration = configuration;
         }
 
-        internal Func<ControllerContext, string> ThemeSelector
-        {
-            get
-            {
-                Func<ControllerContext, string> routeFunc =
-                    x => x.RouteData.Values.ContainsKey("Theme") ? x.RouteData.Values["Theme"].ToString() : null;
-                Func<ControllerContext, string> siteFunc =
-                    x => !string.IsNullOrEmpty(_configuration.DefaultTheme) ? _configuration.DefaultTheme : "Default";
-                return x => routeFunc.Invoke(x) ?? siteFunc.Invoke(x);
-            }
-        }
 
         public static ThemeManager Instance
         {
-            get { return Lazy.Value; }
+            get { return ThemeManagerInstance.Value; }
         }
 
         public IEnumerable<SelectListItem> Themes(string selectedValue)
@@ -57,7 +47,7 @@ namespace AspNet.Mvc.Theming
         internal void SetViewEngine()
         {
             ViewEngines.Engines.Clear();
-            ViewEngines.Engines.Add(new ThemeableRazorViewEngine(ThemeSelector));
+            ViewEngines.Engines.Add(new ThemeableRazorViewEngine(_configuration));
         }
     }
 }

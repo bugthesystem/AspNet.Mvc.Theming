@@ -73,6 +73,8 @@
     <Compile Include="Attributes\ThemeAttribute.cs" />
     <Compile Include="Configuration\IThemingConfiguration.cs" />
     <Compile Include="Configuration\ThemingConfiguration.cs" />
+    <Compile Include="DefaultThemeResolver.cs" />
+    <Compile Include="IThemeResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThemeManager.cs" />
     <Compile Include="ViewEngine\ThemeableRazorViewEngine.cs" />
