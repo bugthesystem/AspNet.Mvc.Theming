@@ -52,7 +52,7 @@ Put [**Theme**](https://github.com/ziyasal/AspNet.Mvc.Theming/blob/master/src/As
 
 **Custom theme resolver**
 
-Implement your custom theme resolver [see](https://github.com/ziyasal/AspNet.Mvc.Theming/blob/master/src/AspNet.Mvc.Theming.ThemeSelectorSample/Global.asax.cs#L7)
+To implement your custom theme resolver [see](https://github.com/ziyasal/AspNet.Mvc.Theming/blob/master/src/AspNet.Mvc.Theming.ThemeSelectorSample/Global.asax.cs#L7)
 
 Sample: SessionThemeResolver
 ```csharp
@@ -76,3 +76,17 @@ Sample: SessionThemeResolver
     }
 ```
 
+init
+```csharp
+ ThemeManager.Instance.Configure(config =>
+ {
+    config.ThemeDirectory = "~/Themes";
+    config.DefaultTheme = "Default";
+    config.ThemeResolver = new SessionThemeResover();
+ });
+```
+
+Save theme to sesion
+```csharp
+ Session["Theme"] = "YourTheme";
+```
