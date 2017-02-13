@@ -56,8 +56,8 @@ To implement your custom theme resolver [see](https://github.com/ziyasal/AspNet.
 
 Sample: SessionThemeResolver
 ```csharp
-   public class SessionThemeResover : IThemeResolver
-    {
+   public class SessionThemeResolver : IThemeResolver
+   {
         public string Resolve(ControllerContext controllerContext, string theme)
         {
             string result;
@@ -82,7 +82,7 @@ init
  {
     config.ThemeDirectory = "~/Themes";
     config.DefaultTheme = "Default";
-    config.ThemeResolver = new SessionThemeResover();
+    config.ThemeResolver = new SessionThemeResolver();
  });
 ```
 
