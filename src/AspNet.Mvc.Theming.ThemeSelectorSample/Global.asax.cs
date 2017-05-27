@@ -4,7 +4,7 @@ using System.Web.Routing;
 
 namespace AspNet.Mvc.Theming.ThemeSelectorSample
 {
-    public class SessionThemeResover : IThemeResolver
+    public class SessionThemeResolver : IThemeResolver
     {
         public string Resolve(ControllerContext controllerContext, string theme)
         {
@@ -36,7 +36,7 @@ namespace AspNet.Mvc.Theming.ThemeSelectorSample
             {
                 config.ThemeDirectory = "~/Themes";
                 config.DefaultTheme = "Default";
-                config.ThemeResolver = new SessionThemeResover();
+                config.ThemeResolver = new SessionThemeResolver();
             });
         }
     }
